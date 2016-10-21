@@ -12,6 +12,9 @@
 		CD6D07FB1DB8086800F6DB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6D07F91DB8086800F6DB91 /* Main.storyboard */; };
 		CD6D07FD1DB8086800F6DB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6D07FC1DB8086800F6DB91 /* Assets.xcassets */; };
 		CD6D08001DB8086800F6DB91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6D07FE1DB8086800F6DB91 /* LaunchScreen.storyboard */; };
+		CD6D08081DB80F2D00F6DB91 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6D08071DB80F2D00F6DB91 /* csv.swift */; };
+		CD6D080A1DB8127000F6DB91 /* inventory.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD6D08091DB8127000F6DB91 /* inventory.csv */; };
+		CD6D080C1DB814E800F6DB91 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6D080B1DB814E800F6DB91 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CD6D07FC1DB8086800F6DB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6D07FF1DB8086800F6DB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6D08011DB8086800F6DB91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6D08071DB80F2D00F6DB91 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		CD6D08091DB8127000F6DB91 /* inventory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inventory.csv; sourceTree = "<group>"; };
+		CD6D080B1DB814E800F6DB91 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 				CD6D07F51DB8086700F6DB91 /* AppDelegate.swift */,
 				CD6D07F71DB8086700F6DB91 /* ViewController.swift */,
 				CD6D07F91DB8086800F6DB91 /* Main.storyboard */,
+				CD6D08091DB8127000F6DB91 /* inventory.csv */,
+				CD6D08071DB80F2D00F6DB91 /* csv.swift */,
 				CD6D07FC1DB8086800F6DB91 /* Assets.xcassets */,
 				CD6D07FE1DB8086800F6DB91 /* LaunchScreen.storyboard */,
 				CD6D08011DB8086800F6DB91 /* Info.plist */,
+				CD6D080B1DB814E800F6DB91 /* Item.swift */,
 			);
 			path = SearchTask;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					CD6D07F11DB8086700F6DB91 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8R3688592C;
 					};
 				};
 			};
@@ -123,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6D08001DB8086800F6DB91 /* LaunchScreen.storyboard in Resources */,
+				CD6D080A1DB8127000F6DB91 /* inventory.csv in Resources */,
 				CD6D07FD1DB8086800F6DB91 /* Assets.xcassets in Resources */,
 				CD6D07FB1DB8086800F6DB91 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6D080C1DB814E800F6DB91 /* Item.swift in Sources */,
+				CD6D08081DB80F2D00F6DB91 /* csv.swift in Sources */,
 				CD6D07F81DB8086800F6DB91 /* ViewController.swift in Sources */,
 				CD6D07F61DB8086700F6DB91 /* AppDelegate.swift in Sources */,
 			);
@@ -251,10 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SearchTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppsAtHome.SearchTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SearchTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppsAtHome.SearchTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
